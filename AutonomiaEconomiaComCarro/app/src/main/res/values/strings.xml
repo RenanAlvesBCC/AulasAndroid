@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppCombustivel</string>
+    <string name="textBtnConsumo">Autonomia</string>
+    <string name="textEdtKm">Informe a quilometragem</string>
+    <string name="textEdtLit">Informe a litragem</string>
+    <string name="textBtnCombustivel">Combustivel</string>
+    <string name="textEdtAlcool">Informe o preço do alcool</string>
+    <string name="textEdtGasolina">Indorme o preço da gasolina</string>
+    <string name="textBtnCalcular">Calcular</string>
+    <string name="textBtnCancelar">Cancelar</string>
+</resources>
