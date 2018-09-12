@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Shared</string>
+    <string name="lblUser">Usuário:</string>
+    <string name="lblName">Nome:</string>
+    <string name="lblTel">Telefone:</string>
+    <string name="lblEmail">Email:</string>
+    <string name="txtToEdtTxt">Digite aqui..</string>
+    <string name="txtBtnShared">Compartilhar</string>
+</resources>

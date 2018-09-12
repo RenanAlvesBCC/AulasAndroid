@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LblUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblUser"/>
+
+    <EditText
+        android:id="@+id/EtdTxtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LblUser"
+        android:hint="@string/txtToEdtTxt"/>
+    <TextView
+        android:id="@+id/LblName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EtdTxtUser"
+        android:text="@string/lblName"/>
+    <EditText
+        android:id="@+id/EtdTxtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LblName"
+        android:hint="@string/txtToEdtTxt"/>
+    <TextView
+        android:id="@+id/LblTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EtdTxtName"
+        android:text="@string/lblTel"/>
+    <EditText
+        android:id="@+id/EtdTxtTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LblTel"
+        android:hint="@string/txtToEdtTxt"/>
+    <TextView
+        android:id="@+id/LblEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EtdTxtTel"
+        android:text="@string/lblEmail"/>
+    <EditText
+        android:id="@+id/EtdTxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LblEmail"
+        android:hint="@string/txtToEdtTxt"/>
+    <Button
+        android:id="@+id/shared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EtdTxtEmail"
+        android:text="@string/txtBtnShared"/>
+
+</RelativeLayout>
