@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ListViewPersonalizada</string>
+    <string-array name="arrayCarros">
+        <item>FIAT</item>
+        <item>CHEVROLET</item>
+        <item>TESLA</item>
+    </string-array>
+</resources>
