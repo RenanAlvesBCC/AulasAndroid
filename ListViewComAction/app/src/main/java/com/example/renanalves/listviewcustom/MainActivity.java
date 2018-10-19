@@ -29,9 +29,7 @@ public class MainActivity extends Activity {
         itens.add(itemC);
 
         ListViewItem lista = new ListViewItem(this,itens);
-
         ListView lView = findViewById(R.id.carList);
-
         lView.setAdapter(lista);
 
         final Intent intent;

@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import com.example.renanalves.listviewpersonalizada.R;
 
-public class MainActivity extends Activity {
+public class AMainActivity extends Activity {
 
     ListView carros;
 

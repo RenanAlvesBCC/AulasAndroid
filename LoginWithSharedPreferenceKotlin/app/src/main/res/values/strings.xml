@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LoginWithSharedPreferenceKotlin</string>
+    <string name="edtTextLogin">Login:</string>
+    <string name="edtTextSenha">Senha:</string>
+</resources>

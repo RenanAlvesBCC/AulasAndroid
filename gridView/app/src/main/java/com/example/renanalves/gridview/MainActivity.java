@@ -42,16 +42,16 @@ public class MainActivity extends Activity{
 
         final Intent intent = new Intent(this,ProdutoInformation.class);
 
-        grid.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Produto contato = (Produto) adapterView.getAdapter().getItem(i);
-
-                intent.putExtra("Produto",contato);
-                startActivity(intent);
-            }
-        });
+//        grid.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+//
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Produto contato = (Produto) adapterView.getAdapter().getItem(i);
+//
+//                intent.putExtra("Produto",contato);
+//                startActivity(intent);
+//            }
+//        });
     }
 
 }
