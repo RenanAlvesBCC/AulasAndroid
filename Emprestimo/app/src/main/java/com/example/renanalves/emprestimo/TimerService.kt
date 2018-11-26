@@ -6,6 +6,7 @@ import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.os.IBinder
+import com.example.renanalves.emprestimo.Model.AlertReceiver
 import java.util.*
 
 class TimerService: Service() {

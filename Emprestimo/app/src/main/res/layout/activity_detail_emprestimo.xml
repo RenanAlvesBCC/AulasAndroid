@@ -8,6 +8,9 @@
         android:orientation="vertical"
         tools:context=".DetailEmprestimoActivity">
 
+    <TextView android:id="@+id/tvNomeItemEmprestado" android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="Item Emprestado:" android:textAlignment="center" android:textSize="24sp"/>
+
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -15,8 +18,6 @@
 
         <ImageView android:layout_width="115dp" android:layout_height="match_parent" android:id="@+id/imgItem"/>
         <LinearLayout android:layout_width="271dp" android:layout_height="match_parent" android:orientation="vertical">
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="18sp"
-                      android:text="Title" android:textAlignment="center" android:id="@+id/tvNomeItem"/>
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="dataEmprestada" android:id="@+id/tvDataEmp"/>
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="dataEntrega" android:id="@+id/tvDataEnt"/>
         </LinearLayout>
@@ -24,17 +25,11 @@
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
               android:text="Informações Emprestador" android:textAlignment="center" android:textSize="24sp"/>
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nome:"/>
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/edtNome"/>
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Telefone:"/>
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/edtTelefone"/>
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cep"/>
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/edtCep"/>
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Localidade:"/>
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/edtLocalidade"/>
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bairro:"/>
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/edtBairro"/>
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="UF:"/>
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/edtUF"/>
 
 </LinearLayout>

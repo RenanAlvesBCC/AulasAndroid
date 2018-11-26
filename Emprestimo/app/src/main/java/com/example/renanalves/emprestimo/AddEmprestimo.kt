@@ -10,6 +10,7 @@ import android.provider.MediaStore
 import android.widget.Toast
 import com.example.renanalves.emprestimo.DataBase.DBHelper
 import com.example.renanalves.emprestimo.Model.Emprestimo
+import com.example.renanalves.emprestimo.Model.Notification
 import kotlinx.android.synthetic.main.activity_add_emprestimo.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -46,14 +47,19 @@ class AddEmprestimo : Activity() {
         }
 
         confirmaCadastro.setOnClickListener {
-            emprestimo = Emprestimo(intent.getIntExtra("id",0),nomeStamp.toString(),cepStamp.toString(),telefoneStamp.toString(), produtoStamp.editableText.toString(),currentUri.toString(), getDataAtual().toString(), dataEntregaPicker.text.toString())
+            emprestimo = Emprestimo(intent.getIntExtra("id",0),nomeStamp.text.toString(),cepStamp.text.toString(),telefoneStamp.text.toString(), produtoStamp.editableText.toString(),currentUri.toString(), getDataAtual().toString(), dataEntregaPicker.text.toString())
             db = DBHelper(this)
             db.addEmprestimo(emprestimo)
 
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-            AlertReceiver().sendNotification(this, emprestimo.nomeObjeto.toString(), "Hora de recuperar a seu objeto emprestado!" )
+
+            var date = SimpleDateFormat("dd/MM/yyyy")
+            var datadevolucao = date.parse(dataEntregaPicker.text.toString())
+            var time = datadevolucao.time - Date().time
+            val mNotificationTime = Calendar.getInstance().timeInMillis + time
+            Notification().setNotification(mNotificationTime, this@AddEmprestimo)
         }
     }
 

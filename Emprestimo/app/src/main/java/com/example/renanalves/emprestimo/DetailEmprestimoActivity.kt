@@ -18,9 +18,9 @@ class DetailEmprestimoActivity : Activity() {
         setContentView(R.layout.activity_detail_emprestimo)
         var emprestimo : Emprestimo = intent.getSerializableExtra("emprestimo") as Emprestimo
         imgItem.setImageURI(Uri.parse(emprestimo.fotoObjeto))
-        tvNomeItem.setText(emprestimo.nomeObjeto)
-        tvDataEmp.setText(emprestimo.dataEmprestimo)
-        tvDataEnt.setText(emprestimo.dataEntrega)
+        tvNomeItemEmprestado.setText(emprestimo.nomeObjeto)
+        tvDataEmp.setText("Data emprestada: "+emprestimo.dataEmprestimo)
+        tvDataEnt.setText("Data de entrega: "+emprestimo.dataEntrega)
         edtCep.setText(emprestimo.cepPessoa)
         consultaCep(emprestimo.cepPessoa!!)
     }
