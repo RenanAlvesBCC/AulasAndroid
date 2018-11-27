@@ -33,6 +33,7 @@ class MainActivity : Activity() {
         var emprestimosAdapter = EmprestimoAdapter(this, emprestimos)
         var listViewEmprestimos = findViewById<ListView>(R.id.listViewEmprestimos)
         listViewEmprestimos.adapter = emprestimosAdapter
+
         addButton.setOnClickListener {
             var intent = Intent(this,AddEmprestimo::class.java)
             intent.putExtra("id",emprestimos.count())
