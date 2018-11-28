@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DetailEmprestimoActivity">
+
+    <TextView android:id="@+id/tvNomeItemEmprestado" android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Item Emprestado:" android:textAlignment="center" android:textSize="24sp"
+              android:background="@color/colorPrimaryDark" android:textColor="@android:color/background_light"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="99dp">
+
+        <ImageView android:layout_width="115dp" android:layout_height="match_parent" android:id="@+id/imgItem"/>
+        <LinearLayout android:layout_width="271dp" android:layout_height="match_parent" android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="dataEmprestada" android:id="@+id/tvDataEmp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="dataEntrega" android:id="@+id/tvDataEnt"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="Informações Emprestador" android:textAlignment="center" android:textSize="24sp"
+              android:background="@color/colorPrimaryDark" android:textColor="@android:color/background_light"/>
+    <TextView android:layout_width="match_parent" android:layout_height="35dp" android:textSize="18dp" android:id="@+id/edtNome"/>
+    <TextView android:layout_width="match_parent" android:layout_height="35dp" android:textSize="18dp" android:id="@+id/edtTelefone"
+              tools:layout_height="35dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="35dp" android:textSize="18dp" android:id="@+id/edtCep"
+              tools:layout_height="35dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="35dp" android:textSize="18dp" android:id="@+id/edtLocalidade"/>
+    <TextView android:layout_width="match_parent" android:layout_height="35dp" android:textSize="18dp" android:id="@+id/edtBairro"/>
+    <TextView android:layout_width="match_parent" android:layout_height="35dp" android:textSize="18dp" android:id="@+id/edtUF"/>
+    <TextView android:layout_width="match_parent" android:layout_height="35dp" android:textSize="18dp" android:id="@+id/edtLogradouro"/>
+
+</LinearLayout>
