@@ -12,11 +12,11 @@
     <EditText android:layout_below="@id/tvNome" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/nomeStamp" android:inputType="text"/>
     <TextView android:layout_below="@id/nomeStamp" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvCep" android:text="Cep:"/>
     <EditText android:layout_below="@id/tvCep" android:layout_width="match_parent" android:layout_height="wrap_content"
-              android:id="@+id/cepStamp" android:autoText="false" android:inputType="number"/>
+              android:id="@+id/cepStamp" android:autoText="false" android:inputType="number" android:maxLength="13"/>
     <TextView android:layout_below="@id/cepStamp" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvTel" android:text="Telefone:"/>
     <EditText android:layout_below="@id/tvTel" android:layout_width="match_parent" android:layout_height="wrap_content"
               android:id="@+id/telefoneStamp"
-              android:inputType="number"/>
+              android:inputType="number" android:maxLength="9"/>
     <TextView android:layout_below="@id/telefoneStamp" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvNomeProduto" android:text="Nome do Produto:"/>
     <EditText android:layout_below="@id/tvNomeProduto" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/produtoStamp"
               android:inputType="text"    />

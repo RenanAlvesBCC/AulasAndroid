@@ -59,7 +59,7 @@ class AddEmprestimoActivity : AppCompatActivity() {
             var datadevolucao = date.parse(dataEntregaPicker.text.toString())
             var time = datadevolucao.time - Date().time
 //            val mNotificationTime = Calendar.getInstance().timeInMillis + time
-            com.example.renanalves.emprestimoapp.Model.Notification.Notification().setNotification(5, this@AddEmprestimoActivity)
+            com.example.renanalves.emprestimoapp.Model.Notification.Notification().setNotification( 5, this@AddEmprestimoActivity)
         }
     }
 
